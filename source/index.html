@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="https://echo.htmlacademy.ru" alt="Логотип магазина Кэт энерджи">
+      </a>
+      <p class="page-header__heading"><b>CAT</b> ENERGY</p>
+      <button class="page-header__navigation-toggle-button"></button>
+      <nav class="page-header__navigation visually-hidden">
+        <ul class="page-header__list">
+          <li class="page-header__item">Главная</li>
+          <li class="page-header__item">Каталог продукции</li>
+          <li class="page-header__item">Подбор программы</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Магазин питания для котов "Cat Energy"</h1>
+      <section class="introducing-block">
+        <h2 class="introducing-block__heading">Функциональное питание для котов</h2>
+        <p class="introducing-block__text">Занялся собой? Займись котом!</p>
+        <img class="introducing-block__product-image" src="https://echo.htmlacademy.ru" alt="Cat Energy PRO">
+        <button class="introducing-block__programm-button">Подобрать программу</button>
+        <ul class="programm-list">
+          <li class="programm-slim programm-block">
+            <h3 class="programm-slim__heading">Похудение</h3>
+            <p class="programm-slim__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="programm-slim__catalog-button programm-block__catalog-button" href="#">Каталог Slim</a>
+          </li>
+          <li class="programm-weight-gain programm-block">
+            <h3 class="programm-weight-gain__heading">Набор массы</h3>
+            <p class="programm-weight-gain__text">Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="programm-weight-gain__catalog-button programm-block__catalog-button" href="#">Каталог PRO</a>
+          </li>
+        </ul>
+      </section>
+      <section class="explaining-block">
+        <h2 class="explaining-block__heading">Как это работает</h2>
+        <ul class="explaining-block__list">
+          <li class="explaining-block__item">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="explaining-block__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="explaining-block__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="explaining-block__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+        </ul>
+      </section>
+      <section class="example-block">
+        <h2 class="example-block__heading">Живой пример</h2>
+        <p class="example-block__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок!
+          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="weight-result-block example-block__result-block">
+          <p class="weight-result-block__lost-weight">5 кг</p>
+          <p class="weight-result-block__text">Снижение веса</p>
+        </div>
+        <div class="days-result-block example-block__result-block">
+          <p class="days-result-block__lost-days">60 Дней</p>
+          <p class="days-result-block__text">Затрачено веса</p>
+        </div>
+        <p class="example-block__expenses">Затраты на питание: 15 000 руб.</p>
+        <div class="example-block__slider">
+          <span class="example-block__before">Было</span>
+          <div class="example-block__scale"></div>
+          <span class="example-block__after">Стало</span>
+        </div>
+      </section>
+      <section class="cooperation-block">
+        <h2 class="cooperation-block__heading visually-hidden">Сотрудничество и расположение</h2>
+        <p class="cooperation-block__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="cooperation-block__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <iframe class="cooperation-block__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6502990019003!2d30.323187000836793!3d59.93875947667364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbg!4v1605353409099!5m2!1sru!2sbg"
+         width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__company">
+        <!-- Временно добавлю текст, потом вставлю изображение по макету -->
+        <p class="page-footer__text">CAT Energy</p>
+      </div>
+      <ul class="page-footer__list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__vkontakte" href="#"></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__instagram" href="#"></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__facebook" href="#"></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <!-- Лого вставлю через ::after -->
+      </div>
+    </footer>
   </body>
 </html>
