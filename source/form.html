@@ -7,75 +7,118 @@
 </head>
 <body>
 
-  <main>
-    <h1>Подбор программы</h1>
-    <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form action="https://echo.htmlacademy.ru">
-      <div>
-        <h3 class="visually-hidden">Информация о коте</h3>
-        <label>
-          Имя:*
-          <input type="text" name="name" value="Барсик" required>
-        </label>
-        <label>
-          Вес (кг):*
-          <input type="number" name="weight" value="7" required>
-        </label>
-        <label>
-          Возраст (лет):
-          <input type="number" name="age" value="7">
-        </label>
+  <main class="page-main">
+    <h1 class="page-main__heading">Подбор программы</h1>
+    <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form class="form-container" action="https://echo.htmlacademy.ru">
+      <div class="form-container__basic-info">
+        <h3 class="basic-info__heading visually-hidden">Информация о коте</h3>
+        <ul class="basic-info__list">
+          <li class="basic-info__item">
+            <label class="basic-info__field">
+              Имя:*
+              <input class="basic-info__input" type="text" name="name" value="Барсик" required>
+            </label>
+          </li>
+          <li class="basic-info__item">
+            <label class="basic-info__field">
+              Вес (кг):*
+              <input class="basic-info__input" type="number" name="weight" value="7" required>
+            </label>
+          </li>
+          <li class="basic-info__item">
+            <label class="basic-info__field">
+              Возраст (лет):
+              <input class="basic-info__input" type="number" name="age" value="7">
+            </label>
+          </li>
+        </ul>
       </div>
-      <div>
-        <h3 class="visually-hidden">Программа</h3>
-        <label>
-          <input type="radio" name="slim" checked>
-          Похудение
-        </label>
-        <label>
-          <input type="radio" name="weight-gain">
-          Набор массы
-        </label>
-        <label>
-          <input type="radio" name="advice">
-          Не знаю (нужен ваш совет)
-        </label>
+      <div class="form-container__program-select">
+        <h3 class="program-select__heading visually-hidden">Программа</h3>
+        <ul class="program-select__list">
+          <li class="program-select__item">
+            <label class="program-select__field">
+              <input class="program-select__input visually-hidden" type="radio" name="slim" checked>
+              <div class="program-select__radio"></div>
+              Похудение
+            </label>
+          </li>
+          <li class="program-select__item">
+            <label class="program-select__field">
+              <input class="program-select__input visually-hidden" type="radio" name="weight-gain">
+              <div class="program-select__radio"></div>
+              Набор массы
+            </label>
+          </li>
+          <li class="program-select__item">
+            <label class="program-select__field">
+              <input class="program-select__input visually-hidden" type="radio" name="advice">
+              <div class="program-select__radio"></div>
+              Не знаю (нужен ваш совет)
+            </label>
+          </li>
+        </ul>
       </div>
-      <div>
-        <h3>Дополнительно для владельца</h3>
-        <p>Контактные данные (владельца кота)</p>
-        <label>
-          e-mail:*
-          <input type="email" name="email" value="Kuklachev@gmail.com" required>
-        </label>
-        <label>
-          Телефон:*
-          <input type="tel" name="tel" value="8 (960) 900-60-90" required>
-        </label>
+      <div class="form-container__owner-info">
+        <h3 class="owner-info__heading heading--green-line">Дополнительно для владельца</h3>
+        <p class="owner-info__text">Контактные данные (владельца кота)</p>
+        <ul class="owner-info__list">
+          <li class="owner-info__item">
+            <label class="owner-info__field">
+              e-mail:*
+              <input class="owner-info__input" type="email" name="email" value="Kuklachev@gmail.com" required>
+            </label>
+          </li>
+          <li class="owner-info__item">
+            <label class="owner-info__field">
+              Телефон:*
+              <input class="owner-info__input" type="tel" name="tel" value="8 (960) 900-60-90" required>
+            </label>
+          </li>
+        </ul>
       </div>
-      <p>Комментарий</p>
-      <textarea rows="6" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-      <p>Дополнительно</p>
-      <label>
-        <input type="checkbox" name="sweetener" value="sweetener" checked>
-        Сахарозаменитель
-      </label>
-      <label>
-        <input type="checkbox" name="water" value="water">
-        Питьевая вода
-      </label>
-      <label>
-        <input type="checkbox" name="milk" value="milk">
-        Молоко
-      </label>
-      <label>
-        <input type="checkbox" name="vitamins" value="vitamins">
-        Витамины
-      </label>
-      <input type="submit" name="submit" value="Отправить заявку">
-      <p>
-        <small>*</small> - Обязательные поля
-      </p>
+      <div class="form-container__comment">
+        <h3 class="comment__heading heading--green-line">Комментарий</h3>
+        <textarea rows="6" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </div>
+      <div class="form-container__extras">
+        <h3 class="extras__heading heading--green-line">Дополнительно</h3>
+        <ul class="extras__list">
+          <li class="extras__item">
+            <label class="extras__field">
+              <input class="extras__input visually-hidden" type="checkbox" name="sweetener" value="sweetener" checked>
+              <div class="extras__checkbox"></div>
+              Сахарозаменитель
+            </label>
+          </li>
+          <li class="extras__item">
+            <label class="extras__field">
+              <input class="extras__input visually-hidden" type="checkbox" name="water" value="water">
+              <div class="extras__checkbox"></div>
+              Питьевая вода
+            </label>
+          </li>
+          <li class="extras__item">
+            <label class="extras__field">
+              <input class="extras__input visually-hidden" type="checkbox" name="milk" value="milk">
+              <div class="extras__checkbox"></div>
+              Молоко
+            </label>
+          </li>
+          <li class="extras__item">
+            <label class="extras__field">
+              <input class="extras__input visually-hidden" type="checkbox" name="vitamins" value="vitamins">
+              <div class="extras__checkbox"></div>
+              Витамины
+            </label>
+          </li>
+        </ul>
+      </div>
+      <input class="form-container__submit-button" type="submit" name="submit" value="Отправить заявку">
+        <p class="form-container__required">
+          <small>*</small> - Обязательные поля
+        </p>
     </form>
   </main>
 
