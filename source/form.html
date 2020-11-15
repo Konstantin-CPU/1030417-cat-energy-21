@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <main>
+    <h1>Подбор программы</h1>
+    <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form action="https://echo.htmlacademy.ru">
+      <div>
+        <h3 class="visually-hidden">Информация о коте</h3>
+        <label>
+          Имя:*
+          <input type="text" name="name" value="Барсик" required>
+        </label>
+        <label>
+          Вес (кг):*
+          <input type="number" name="weight" value="7" required>
+        </label>
+        <label>
+          Возраст (лет):
+          <input type="number" name="age" value="7">
+        </label>
+      </div>
+      <div>
+        <h3 class="visually-hidden">Программа</h3>
+        <label>
+          <input type="radio" name="slim" checked>
+          Похудение
+        </label>
+        <label>
+          <input type="radio" name="weight-gain">
+          Набор массы
+        </label>
+        <label>
+          <input type="radio" name="advice">
+          Не знаю (нужен ваш совет)
+        </label>
+      </div>
+      <div>
+        <h3>Дополнительно для владельца</h3>
+        <p>Контактные данные (владельца кота)</p>
+        <label>
+          e-mail:*
+          <input type="email" name="email" value="Kuklachev@gmail.com" required>
+        </label>
+        <label>
+          Телефон:*
+          <input type="tel" name="tel" value="8 (960) 900-60-90" required>
+        </label>
+      </div>
+      <p>Комментарий</p>
+      <textarea rows="6" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <p>Дополнительно</p>
+      <label>
+        <input type="checkbox" name="sweetener" value="sweetener" checked>
+        Сахарозаменитель
+      </label>
+      <label>
+        <input type="checkbox" name="water" value="water">
+        Питьевая вода
+      </label>
+      <label>
+        <input type="checkbox" name="milk" value="milk">
+        Молоко
+      </label>
+      <label>
+        <input type="checkbox" name="vitamins" value="vitamins">
+        Витамины
+      </label>
+      <input type="submit" name="submit" value="Отправить заявку">
+      <p>
+        <small>*</small> - Обязательные поля
+      </p>
+    </form>
+  </main>
+
+</body>
+</html>
