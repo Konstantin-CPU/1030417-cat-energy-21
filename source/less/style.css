@@ -1,0 +1,138 @@
+/* oswald-regular - latin_cyrillic */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald-v35-latin-cyrillic-regular.eot");
+  src: local(""), url("../fonts/oswald-v35-latin-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-v35-latin-cyrillic-regular.woff2") format("woff2"), url("../fonts/oswald-v35-latin-cyrillic-regular.woff") format("woff"), url("../fonts/oswald-v35-latin-cyrillic-regular.ttf") format("truetype"), url("../fonts/oswald-v35-latin-cyrillic-regular.svg#Oswald") format("svg");
+}
+/* oswald-500 - latin_cyrillic */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswald-v35-latin-cyrillic-500.eot");
+  src: local(""), url("../fonts/oswald-v35-latin-cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-v35-latin-cyrillic-500.woff2") format("woff2"), url("../fonts/oswald-v35-latin-cyrillic-500.woff") format("woff"), url("../fonts/oswald-v35-latin-cyrillic-500.ttf") format("truetype"), url("../fonts/oswald-v35-latin-cyrillic-500.svg#Oswald") format("svg");
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+.page-header__navigation {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+.introducing-block {
+  color: #000000;
+}
+.introducing-block__image-block {
+  background: rgba(104, 183, 56, 0.85) url("../img/introducing-block-image.jpg") 50% no-repeat;
+  width: 320px;
+  height: 302px;
+  color: #ffffff;
+}
+.introducing-block__heading {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+.introducing-block__subheading {
+  font-size: 14px;
+  line-height: 14px;
+}
+.introducing-block__program-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #68B738;
+  text-decoration: none;
+}
+.program-list__item {
+  background-color: #f2f2f2;
+}
+.program-list__heading {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+}
+.program-list__text {
+  color: #444444;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+.program-list__catalog-button {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+.explaining-block__heading {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+}
+.explaining-block__item {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.example-block {
+  background-color: #eaeaea;
+}
+.example-block__heading {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+}
+.example-block__text {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+}
+.example-block__expenses {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.example-block__before,
+.example-block__after {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.result-block__value {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.result-block__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+}
