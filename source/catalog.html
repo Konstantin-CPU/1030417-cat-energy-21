@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -14,18 +15,18 @@
         <span class="visually-hidden">Показать/скрыть меню навигации</span>
       </button>
       <nav class="page-header__navigation">
-        <ul class="page-header__list">
-          <li class="page-header__item">Главная</li>
-          <li class="page-header__item page-header__item--current">Каталог продукции</li>
-          <li class="page-header__item">Подбор программы</li>
+        <ul class="page-header__list list">
+          <li class="page-header__item"><a class="page-header__link" href="index.html">Главная</a></li>
+          <li class="page-header__item page-header__item--current"><a class="page-header__link" href="#">Каталог продукции</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="page-main__heading">Каталог продукции</h1>
+    <main class="page-main catalog-page-main">
+      <h1 class="catalog-page-main__heading">Каталог продукции</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Основные товары</h2>
-        <ul class="catalog__list">
+        <ul class="catalog__list list">
           <li class="catalog__item">
             <a class="catalog__link" href="#">
               <img class="catalog__product-image" src="" width="140" height="112" alt="Кэт энерджи PRO курица 500 грамм">
@@ -154,7 +155,7 @@
         </div>
         <div class="catalog__extra-products extra-products">
           <h3 class="extra-products__heading heading heading--green-line">Дополнительные товары</h3>
-          <ul class="extra-products__list">
+          <ul class="extra-products__list list">
             <li class="extra-products__item">
               <h4 class="extra-products__subheading">Сахарозаменитель</h4>
               <dl class="extra-products__value-list value-list">
@@ -203,22 +204,24 @@
       <div class="page-footer__map-block map-block">
         <iframe class="map-block__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6502990019003!2d30.323187000836793!3d59.93875947667364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbg!4v1605353409099!5m2!1sru!2sbg" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
-      <a class="page-footer__company-logo company-logo" href="#">
-        <img class="company-logo__image" src="" width="128" height="24" alt="Логотип нашей компании">
-      </a>
-      <ul class="page-footer__list">
-        <li class="page-footer__social-item">
-          <a class="page-footer__link page-footer__link--vkontakte" href="#"></a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__link page-footer__link--instagram" href="#"></a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__link page-footer__link--facebook" href="#"></a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__bottom-block">
+        <a class="page-footer__company-logo company-logo" href="#">
+          <img class="company-logo__logo" src="" width="128" height="24" alt="Логотип нашей компании">
+        </a>
+        <ul class="page-footer__list list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__link page-footer__link--vkontakte" href="#"></a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__link page-footer__link--instagram" href="#"></a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__link page-footer__link--facebook" href="#"></a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
   </body>
