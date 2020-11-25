@@ -10,3 +10,17 @@
   line-height: 18px;
   color: @additional-dark-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .explaining-block__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .explaining-block__list {
+    display: flex;
+  }
+}
