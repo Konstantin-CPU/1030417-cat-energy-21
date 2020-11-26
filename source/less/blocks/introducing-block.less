@@ -28,3 +28,31 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .introducing-block__image-block {
+    background: @basic-white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introducing-block__heading,
+  .introducing-block__subheading {
+    color: @basic-black;
+  }
+
+  .introducing-block__heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .introducing-block__subheading {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .introducing-block__program-link {
+    font-size: 20px;
+    line-height: 0px;
+  }
+}

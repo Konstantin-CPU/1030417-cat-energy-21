@@ -21,9 +21,42 @@
   text-transform: uppercase;
 }
 
+.example-block__slider {
+  display: flex;
+  justify-content: space-around;
+}
+
 .example-block__before,
 .example-block__after {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .example-block {
+    background-color: @basic-white;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .example-block {
+    background-color: @basic-grey;
+  }
+
+  .example-block__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .example-block__result-block {
+    grid-column: 1/2;
+  }
+
+  .example-block__slider {
+    grid-column: 2/3;
+    display: flex;
+    align-items: flex-end;
+  }
 }

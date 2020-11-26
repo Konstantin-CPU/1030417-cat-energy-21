@@ -8,3 +8,28 @@
   color: @basic-black;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__navigation-toggle-button {
+    display: none;
+  }
+
+  .page-header__list {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__container {
+    display: flex;
+  }
+
+  .page-header__navigation-toggle-button {
+    display: none;
+  }
+}
