@@ -30,9 +30,9 @@
     <p class="form-page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru">
       <div class="form__basic-info-block">
-        <div class="form__block">
-          <h3 class="visually-hidden">Информация о коте</h3>
-          <ul class="form__list list">
+        <div class="form__block form__block--cat-info">
+          <h4 class="visually-hidden">Информация о коте</h4>
+          <ul class="form__list form__list--cat-info list">
             <li class="form__item">
               <label class="form__label" for="name">
                 Имя:*
@@ -54,8 +54,8 @@
           </ul>
         </div>
         <div class="form__block">
-          <h3 class="visually-hidden">Программа</h3>
-          <ul class="form__list list">
+          <h4 class="visually-hidden">Программа</h4>
+          <ul class="form__list form__list--program list">
             <li class="form__item">
               <input class="form__input form__input--radio visually-hidden" id="slim" type="radio" name="program" checked>
               <div class="form__radio"></div>
@@ -80,7 +80,7 @@
           </ul>
         </div>
       </div>
-      <div class="form__block">
+      <div class="form__block form__block--user-info">
         <h3 class="form__heading form__heading--green-line heading">Контактные данные (владельца кота)</h3>
         <ul class="form__list form__list--user-info list">
           <li class="form__item">
@@ -97,7 +97,7 @@
           </li>
         </ul>
       </div>
-      <div class="form__block">
+      <div class="form__block form__block--comment">
         <h3 class="form__heading form__heading--green-line heading">Комментарий</h3>
         <textarea class="form__comment" rows="6" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
@@ -135,7 +135,7 @@
         </ul>
       </div>
       <div class="form__submit-info-block">
-        <input class="form__submit-button" type="submit "name="submit" value="Отправить заявку">
+        <button class="form__submit-button" type="submit" name="submit">Отправить заявку</button>
         <p class="form__required">* - Обязательные поля</p>
       </div>
     </form>

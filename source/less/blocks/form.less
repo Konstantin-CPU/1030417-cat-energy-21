@@ -11,6 +11,28 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.form__block {
+  padding: 30px 0;
+  width: 100%;
+}
+
+.form__basic-info-block .form__block {
+  padding: 35px 0;
+}
+
+.form__block--user-info {
+  padding: 20px 0;
+}
+
+.form__item {
+  margin-bottom: 14px;
+}
+
+.form__list--checkbox-list .form__item {
+  padding-left: 40px;
 }
 
 .form__input,
@@ -58,11 +80,27 @@
   .form__submit-info-block {
     display: flex;
   }
+
+  .form__submit-button {
+    margin-right: 60px;
+  }
+
+  .form__list--cat-info .form__item {
+    margin-bottom: 20px;
+  }
+
+  .form__list--program .form__item {
+    padding-left: 25px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form__basic-info-block {
     display: flex;
+  }
+
+  .form__block--cat-info {
+    margin-right: 80px;
   }
 
   .form__list--user-info {
@@ -71,5 +109,13 @@
 
   .form__list--checkbox-list {
     display: flex;
+  }
+
+  .form__list--user-info .form__item {
+    margin-right: 70px;
+  }
+
+  .form__submit-button {
+    margin-right: 80px;
   }
 }
