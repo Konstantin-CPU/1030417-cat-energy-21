@@ -1,6 +1,10 @@
 .cooperation-block {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  padding-top: 12px;
+  .padding-mobile();
+  min-height: 114px;
 }
 
 .cooperation-block__text {
@@ -15,4 +19,47 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation-block {
+    .padding-tablet(70px; 70px);
+    padding-top: 48px;
+    min-height: 201px;
+  }
+
+  .cooperation-block__text {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .cooperation-block__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cooperation-block {
+    width: 570px;
+    min-height: 201px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: @basic-white;
+    z-index: 1;
+    padding: 0;
+  }
+
+  .cooperation-block__text {
+    padding-left: 76px;
+    padding-top: 48px;
+  }
+
+  .cooperation-block__address {
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 48px;
+  }
 }

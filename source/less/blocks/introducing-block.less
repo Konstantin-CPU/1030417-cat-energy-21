@@ -1,23 +1,37 @@
 .introducing-block {
   color: @basic-black;
+  text-align: center;
 }
 
 .introducing-block__image-block {
   background: @additional-green 50% no-repeat;
-  .size(320px; 302px);
+  width: 100%;
+  min-height: 302px;
   color: @basic-white;
+  box-sizing: border-box;
+  padding-top: 27px;
+  margin-bottom: 138px;
 }
 
 .introducing-block__heading {
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 25px;
 }
 
 .introducing-block__subheading {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.introducing-block__wrapper {
+  .padding-mobile();
+}
+
+.introducing-block__product-image {
+  display: none;
 }
 
 .introducing-block__program-link {
@@ -27,13 +41,43 @@
   background-color: @basic-green;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 11px 0;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active {
+    background-color: @basic-green-2;
+  }
+
+  &:active .introducing-block__program-link-text {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .introducing-block {
+    padding-top: 47px;
+    .padding-tablet();
+  }
+
   .introducing-block__image-block {
     background: @basic-white;
     display: flex;
     flex-direction: column;
+    padding-top: 0;
+    padding-left: 87px;
+    text-align: left;
+    min-height: 160px;
+    margin-bottom: 29px;
   }
 
   .introducing-block__heading,
@@ -44,6 +88,7 @@
   .introducing-block__heading {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 21px;
   }
 
   .introducing-block__subheading {
@@ -51,8 +96,52 @@
     line-height: 20px;
   }
 
+  .introducing-block__wrapper {
+    padding: 0;
+  }
+
   .introducing-block__program-link {
     font-size: 20px;
     line-height: 0px;
+    width: 244px;
+    min-height: 54px;
+    margin-left: 82px;
+    margin-bottom: 526px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .introducing-block {
+    padding: 0;
+    margin-bottom: 71px;
+  }
+
+  .introducing-block__image-block {
+    padding-left: 190px;
+    padding-top: 223px;
+    margin: 0;
+  }
+
+  .introducing-block__basic-main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    min-height: 694px;
+    margin-bottom: 82px;
+  }
+
+  .introducing-block__program-link {
+    position: absolute;
+    top: 455px;
+    left: 190px;
+    margin: 0;
+  }
+
+  .introducing-block__empty-design-block {
+    background: @additional-green;
+  }
+
+  .introducing-block__wrapper {
+    .padding-desktop();
   }
 }

@@ -1,6 +1,20 @@
 .result-block__results {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.result-block__result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 124px;
+  height: 56px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid @additional-grey-3;
+  border-radius: 3px;
+  position: relative;
 }
 
 .result-block__value {
@@ -14,18 +28,60 @@
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
+  display: block;
+  min-width: 87px;
+  min-height: 17px;
+  background-color: @additional-grey;
+  position: absolute;
+  bottom: -30px;
 }
 
 @media (min-width: @tablet-width) {
   .result-block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 218px;
+    .padding-tablet();
+  }
+
+  .result-block__result {
+    min-width: 162px;
+    height: 72px;
+  }
+
+  .result-block__result--kilograms {
+    margin-right: 42px;
+  }
+
+  .result-block__value {
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 5px;
+  }
+
+  .result-block__text {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @basic-white;
+    min-width: auto;
+    bottom: -22px;
+    .padding-mobile(5px; 5px);
   }
 }
 
 @media (min-width: @desktop-width) {
   .result-block {
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    display: block;
+  }
+
+  .result-block__results {
+    justify-content: flex-start;
+    margin-bottom: 60px;
+  }
+
+  .result-block__text {
+    background-color: @basic-grey;
   }
 }
