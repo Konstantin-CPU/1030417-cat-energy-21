@@ -3,7 +3,6 @@
   text-align: left;
   .padding-mobile();
   margin-bottom: 20px;
-  box-sizing: border-box;
 }
 
 .program-list__item:last-child {
@@ -41,15 +40,16 @@
   padding-bottom: 20px;
   border-top: 1px solid @additional-grey-5;
 
-  &:active .program-list__catalog-button-text {
-    opacity: 0.3;
+  &:active {
+    color: @black-transparent;
   }
 }
 
 @media (min-width: @tablet-width) {
   .program-list__item {
-    min-height: 372px;
-    padding: 77px 0 0 52px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 57px;
     margin-bottom: 30px;
   }
 
@@ -70,6 +70,11 @@
     line-height: 24px;
     padding-right: 227px;
     margin-bottom: 52px;
+    width: 604px;
+  }
+
+  .program-list__item:last-child .program-list__text {
+    width: 569px;
   }
 
   .program-list__catalog-button {
@@ -104,5 +109,10 @@
   .program-list__text {
     padding: 0;
     margin-bottom: 27px;
+    width: 467px;
+  }
+
+  .program-list__item:last-child .program-list__text {
+    width: 457px;
   }
 }
