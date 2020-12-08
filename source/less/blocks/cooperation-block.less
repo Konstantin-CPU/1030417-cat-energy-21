@@ -1,7 +1,7 @@
 .cooperation-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 12px;
+  padding-top: 14px;
   .padding-mobile();
   min-height: 114px;
 }
@@ -11,6 +11,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
 }
 
 .cooperation-block__address {
@@ -18,6 +19,11 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  width: 140px;
+}
+
+.cooperation-block__street {
+  margin-bottom: -14px;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,6 +36,7 @@
   .cooperation-block__text {
     font-size: 20px;
     line-height: 21px;
+    width: 171px;
   }
 
   .cooperation-block__address {
@@ -37,7 +44,11 @@
     line-height: 20px;
     text-align: right;
     margin-left: auto;
-    width: 160px;
+    width: 159px;
+  }
+
+  .cooperation-block__street {
+    margin-bottom: 0;
   }
 }
 
@@ -55,12 +66,19 @@
   .cooperation-block__text {
     padding-left: 76px;
     padding-top: 48px;
+    width: 163px;
   }
 
   .cooperation-block__address {
     text-align: left;
     margin: 0;
-    padding-top: 65px;
+    width: 155px;
+    padding-top: 47px;
     padding-left: 40px;
+    box-sizing: content-box;
+  }
+
+  .cooperation-block__street {
+    margin-bottom: 19px;
   }
 }
