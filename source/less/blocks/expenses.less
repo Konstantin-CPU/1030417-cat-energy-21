@@ -1,11 +1,33 @@
 .expenses {
   font-size: 14px;
   line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .expenses {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .expenses__text {
+    margin-bottom: 9px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .expenses {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .expenses__text {
+    margin: 0;
+    margin-right: 63px;
   }
 }

@@ -5,6 +5,28 @@
 
 .page-footer__bottom-block {
   background-color: @basic-grey;
+  .padding-mobile();
+  text-align: center;
+}
+
+.page-footer__company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95px;
+}
+
+.page-footer__list {
+  height: 63px;
+  border-top: 1px solid @additional-grey-5;
+}
+
+.page-footer__copyright {
+  height: 78px;
+  border-top: 1px solid @additional-grey-5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer__copyright-text {
@@ -19,5 +41,12 @@
   .page-footer__bottom-block {
     display: flex;
     justify-content: space-between;
+    height: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__container {
+    position: relative;
   }
 }
