@@ -1,3 +1,8 @@
+.form-page-main__wrapper {
+  .padding-mobile();
+  padding-top: 27px;
+}
+
 .form-page-main__heading {
   font-size: 36px;
   line-height: 36px;
@@ -9,4 +14,31 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 226px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-page-main__wrapper {
+    padding-top: 51px;
+    .padding-tablet-form();
+  }
+
+  .form-page-main__heading {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  .form-page-main__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page-main__wrapper {
+    padding-top: 187px;
+    .padding-desktop-form();
+  }
 }
