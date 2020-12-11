@@ -14,7 +14,7 @@
           <img class="page-header__logo-image" src="" width="33" height="38" alt="Логотип магазина Кэт энерджи">
           <img class="page-header__logo-text" src="" width="101" height="18" alt="Кэт энерджи">
         </a>
-        <button class="page-header__toggle-button">
+        <button class="page-header__toggle-button button">
           <span class="visually-hidden">Показать/скрыть меню навигации</span>
         </button>
       </div>
@@ -37,47 +37,47 @@
         <div class="form__block form__block--cat-info">
           <h4 class="visually-hidden">Информация о коте</h4>
           <ul class="form__list form__list--cat-info list">
-            <li class="form__item form__item--cat-info">
-              <label class="form__label form__label--cat-info" for="name">
+            <li class="form__item form__item--text-input">
+              <label class="form__label form__label--text-input" for="name">
                 Имя:*
               </label>
-              <input class="form__input form__input--cat-info" id="name" type="text" name="name" placeholder="Барсик" required>
+              <input class="form__input form__input--text-input" id="name" type="text" name="name" placeholder="Барсик" required>
             </li>
-            <li class="form__item form__item--cat-info">
-              <label class="form__label form__label--cat-info" for="weight">
+            <li class="form__item form__item--text-input">
+              <label class="form__label form__label--text-input" for="weight">
                 Вес (кг):*
               </label>
-              <input class="form__input form__input--cat-info" id="weight" type="number" name="weight" placeholder="7" required>
+              <input class="form__input form__input--text-input" id="weight" type="number" name="weight" placeholder="7" required>
             </li>
-            <li class="form__item form__item--cat-info">
-              <label class="form__label form__label--cat-info" for="age">
+            <li class="form__item form__item--text-input">
+              <label class="form__label form__label--text-input" for="age">
                 Возраст (лет):
               </label>
-              <input class="form__input form__input--cat-info" id="age" type="number" name="age" placeholder="7">
+              <input class="form__input form__input--text-input" id="age" type="number" name="age" placeholder="7">
             </li>
           </ul>
         </div>
         <div class="form__block form__block--program">
           <h4 class="visually-hidden">Программа</h4>
           <ul class="form__list form__list--program list">
-            <li class="form__item form__item--program">
-              <input class="form__input form__input--radio visually-hidden" id="slim" type="radio" name="program" checked>
-              <div class="form__radio"></div>
-              <label class="form__label form__label--program" for="slim">
+            <li class="form__item form__item--radio">
+              <input class="form__radio visually-hidden" id="slim" type="radio" name="program" checked>
+              <div class="form__radio-block"></div>
+              <label class="form__label form__label--radio" for="slim">
                 Похудение
               </label>
             </li>
-            <li class="form__item form__item--program">
-              <input class="form__input form__input--radio visually-hidden" id="weight-gain" type="radio" name="program">
-              <div class="form__radio"></div>
-              <label class="form__label form__label--program" for="weight-gain">
+            <li class="form__item form__item--radio">
+              <input class="form__radio visually-hidden" id="weight-gain" type="radio" name="program">
+              <div class="form__radio-block"></div>
+              <label class="form__label form__label--radio" for="weight-gain">
                 Набор массы
               </label>
             </li>
-            <li class="form__item form__item--program">
-              <input class="form__input form__input--radio visually-hidden" id="idk" type="radio" name="program">
-              <div class="form__radio"></div>
-              <label class="form__label form__label--program" for="idk">
+            <li class="form__item form__item--radio">
+              <input class="form__radio visually-hidden" id="idk" type="radio" name="program">
+              <div class="form__radio-block"></div>
+              <label class="form__label form__label--radio" for="idk">
                 Не знаю (нужен ваш совет)
               </label>
             </li>
@@ -85,55 +85,61 @@
         </div>
       </div>
       <div class="form__block form__block--user-info">
-        <h3 class="form__heading form__heading--user-info form__heading--green-line heading">Контактные данные<br class="br br--mobile"> (владельца кота)</h3>
+        <div class="form__heading-block">
+          <h3 class="form__heading form__heading--user-info form__heading--green-line heading">Контактные данные (владельца кота)</h3>
+        </div>
         <ul class="form__list form__list--user-info list">
-          <li class="form__item form__item--user-info">
-            <label class="form__label form__label--user-info" for="email">
+          <li class="form__item form__item--text-input">
+            <label class="form__label form__label--text-input" for="email">
               e-mail:*
             </label>
-            <input class="form__input form__input--user-info" id="email" type="email" name="email" placeholder="Kuklachev@gmail.com" required>
+            <input class="form__input form__input--text-input" id="email" type="email" name="email" placeholder="Kuklachev@gmail.com" required>
           </li>
-          <li class="form__item form__item--user-info">
-            <label class="form__label form__label--user-info" for="tel">
+          <li class="form__item form__item--text-input">
+            <label class="form__label form__label--text-input" for="tel">
               Телефон:*
             </label>
-            <input class="form__input form__input--user-info" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            <input class="form__input form__input--text-input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </div>
       <div class="form__block form__block--comment">
-        <h3 class="form__heading form__heading--comment form__heading--green-line heading">Комментарий</h3>
+        <div class="form__heading-block">
+          <h3 class="form__heading form__heading--comment form__heading--green-line heading">Комментарий</h3>
+        </div>
         <div class="form__comment-block">
           <textarea class="form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
       <div class="form__block form__block--extra">
-        <h3 class="form__heading form__heading--extra form__heading--green-line heading">Дополнительно</h3>
+        <div class="form__heading-block">
+          <h3 class="form__heading form__heading--extra form__heading--green-line heading">Дополнительно</h3>
+        </div>
         <ul class="form__list form__list--extra list">
           <li class="form__item form__item--extra">
-            <input class="form__input form__input--extra form__input--checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" value="sweetener" checked>
-            <div class="form__checkbox"></div>
+            <input class="form__checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" value="sweetener" checked>
+            <div class="form__checkbox-block"></div>
             <label class="form__label form__label--extra" for="sweetener">
               Сахарозаменитель
             </label>
           </li>
           <li class="form__item form__item--extra">
-            <input class="form__input form__input--extra form__input--checkbox visually-hidden" id="water" type="checkbox" name="water" value="water">
-            <div class="form__checkbox"></div>
+            <input class="form__checkbox visually-hidden" id="water" type="checkbox" name="water" value="water">
+            <div class="form__checkbox-block"></div>
             <label class="form__label form__label--extra" for="water">
               Питьевая вода
             </label>
           </li>
           <li class="form__item form__item--extra">
-            <input class="form__input form__input--extra form__input--checkbox visually-hidden" id="milk" type="checkbox" name="milk" value="milk">
-            <div class="form__checkbox"></div>
+            <input class="form__checkbox visually-hidden" id="milk" type="checkbox" name="milk" value="milk">
+            <div class="form__checkbox-block"></div>
             <label class="form__label form__label--extra" for="milk">
               Молоко
             </label>
           </li>
           <li class="form__item form__item--extra">
-            <input class="form__input form__input--extra form__input--checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins" value="vitamins">
-            <div class="form__checkbox"></div>
+            <input class="form__checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins" value="vitamins">
+            <div class="form__checkbox-block"></div>
             <label class="form__label form__label--extra" for="vitamins">
               Витамины
             </label>
@@ -141,7 +147,7 @@
         </ul>
       </div>
       <div class="form__submit-info-block">
-        <button class="form__submit-button" type="submit" name="submit">Отправить заявку</button>
+        <button class="form__submit-button button" type="submit" name="submit">Отправить заявку</button>
         <p class="form__required">* — Обязательные поля</p>
       </div>
     </form>
