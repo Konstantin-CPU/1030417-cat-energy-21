@@ -7,73 +7,77 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--black-font">
     <div class="page-header__container">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="" width="33" height="38" alt="Логотип магазина Кэт энерджи">
-        <img class="page-header__logo-text" src="" width="101" height="18" alt="Кэт энерджи">
-      </a>
-      <button class="page-header__navigation-toggle-button">
-        <span class="visually-hidden">Показать/скрыть меню навигации</span>
-      </button>
-      <nav class="page-header__navigation">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="" width="33" height="38" alt="Логотип магазина Кэт энерджи">
+          <img class="page-header__logo-text" src="" width="101" height="18" alt="Кэт энерджи">
+        </a>
+        <button class="page-header__toggle-button button">
+          <span class="visually-hidden">Показать/скрыть меню навигации</span>
+        </button>
+      </div>
+      <nav class="page-header__navigation page-header__navigation--open">
         <ul class="page-header__list list">
           <li class="page-header__item"><a class="page-header__link" href="index.html">Главная</a></li>
           <li class="page-header__item"><a class="page-header__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="page-header__item page-header__item--current"><a class="page-header__link" href="#">Подбор программы</a></li>
+          <li class="page-header__item"><a class="page-header__link page-header__link--current" href="#">Подбор программы</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="page-main form-page-main">
-    <h1 class="form-page-main__heading heading">Подбор программы</h1>
-    <p class="form-page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <div class="form-page-main__wrapper">
+      <h1 class="form-page-main__heading heading">Подбор программы</h1>
+      <p class="form-page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
     <form class="form" action="https://echo.htmlacademy.ru">
       <div class="form__basic-info-block">
         <div class="form__block form__block--cat-info">
           <h4 class="visually-hidden">Информация о коте</h4>
           <ul class="form__list form__list--cat-info list">
-            <li class="form__item">
-              <label class="form__label" for="name">
+            <li class="form__item form__item--text-input">
+              <label class="form__label form__label--text-input" for="name">
                 Имя:*
               </label>
-              <input class="form__input" id="name" type="text" name="name" placeholder="Барсик" required>
+              <input class="form__input form__input--text-input" id="name" type="text" name="name" placeholder="Барсик" required>
             </li>
-            <li class="form__item">
-              <label class="form__label" for="weight">
+            <li class="form__item form__item--text-input">
+              <label class="form__label form__label--text-input" for="weight">
                 Вес (кг):*
               </label>
-              <input class="form__input" id="weight" type="number" name="weight" placeholder="7" required>
+              <input class="form__input form__input--text-input" id="weight" type="number" name="weight" placeholder="7" required>
             </li>
-            <li class="form__item">
-              <label class="form__label" for="age">
+            <li class="form__item form__item--text-input">
+              <label class="form__label form__label--text-input" for="age">
                 Возраст (лет):
               </label>
-              <input class="form__input" id="age" type="number" name="age" placeholder="7">
+              <input class="form__input form__input--text-input" id="age" type="number" name="age" placeholder="7">
             </li>
           </ul>
         </div>
-        <div class="form__block">
+        <div class="form__block form__block--program">
           <h4 class="visually-hidden">Программа</h4>
           <ul class="form__list form__list--program list">
-            <li class="form__item">
-              <input class="form__input form__input--radio visually-hidden" id="slim" type="radio" name="program" checked>
-              <div class="form__radio"></div>
-              <label class="form__label" for="slim">
+            <li class="form__item form__item--radio">
+              <input class="form__radio visually-hidden" id="slim" type="radio" name="program" checked>
+              <div class="form__radio-block"></div>
+              <label class="form__label form__label--radio" for="slim">
                 Похудение
               </label>
             </li>
-            <li class="form__item">
-              <input class="form__input form__input--radio visually-hidden" id="weight-gain" type="radio" name="program">
-              <div class="form__radio"></div>
-              <label class="form__label" for="weight-gain">
+            <li class="form__item form__item--radio">
+              <input class="form__radio visually-hidden" id="weight-gain" type="radio" name="program">
+              <div class="form__radio-block"></div>
+              <label class="form__label form__label--radio" for="weight-gain">
                 Набор массы
               </label>
             </li>
-            <li class="form__item">
-              <input class="form__input form__input--radio visually-hidden" id="idk" type="radio" name="program">
-              <div class="form__radio"></div>
-              <label class="form__label" for="idk">
+            <li class="form__item form__item--radio">
+              <input class="form__radio visually-hidden" id="idk" type="radio" name="program">
+              <div class="form__radio-block"></div>
+              <label class="form__label form__label--radio" for="idk">
                 Не знаю (нужен ваш совет)
               </label>
             </li>
@@ -81,77 +85,88 @@
         </div>
       </div>
       <div class="form__block form__block--user-info">
-        <h3 class="form__heading form__heading--green-line heading">Контактные данные (владельца кота)</h3>
+        <div class="form__heading-block">
+          <h3 class="form__heading form__heading--user-info form__heading--green-line heading">Контактные данные (владельца кота)</h3>
+        </div>
         <ul class="form__list form__list--user-info list">
-          <li class="form__item">
-            <label class="form__label" for="email">
+          <li class="form__item form__item--text-input">
+            <label class="form__label form__label--text-input" for="email">
               e-mail:*
             </label>
-            <input class="form__input" id="email" type="email" name="email" placeholder="Kuklachev@gmail.com" required>
+            <input class="form__input form__input--text-input" id="email" type="email" name="email" placeholder="Kuklachev@gmail.com" required>
           </li>
-          <li class="form__item">
-            <label class="form__label" for="tel">
+          <li class="form__item form__item--text-input">
+            <label class="form__label form__label--text-input" for="tel">
               Телефон:*
             </label>
-            <input class="form__input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            <input class="form__input form__input--text-input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </div>
       <div class="form__block form__block--comment">
-        <h3 class="form__heading form__heading--green-line heading">Комментарий</h3>
-        <textarea class="form__comment" rows="6" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="form__heading-block">
+          <h3 class="form__heading form__heading--comment form__heading--green-line heading">Комментарий</h3>
+        </div>
+        <div class="form__comment-block">
+          <textarea class="form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </div>
-      <div class="form__block">
-        <h3 class="form__heading form__heading--green-line heading">Дополнительно</h3>
-        <ul class="form__list form__list--checkbox-list list">
-          <li class="form__item">
-            <input class="form__input form__input--checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" value="sweetener" checked>
-            <div class="form__checkbox"></div>
-            <label class="form__label" for="sweetener">
+      <div class="form__block form__block--extra">
+        <div class="form__heading-block">
+          <h3 class="form__heading form__heading--extra form__heading--green-line heading">Дополнительно</h3>
+        </div>
+        <ul class="form__list form__list--extra list">
+          <li class="form__item form__item--checkbox">
+            <input class="form__checkbox visually-hidden" id="sweetener" type="checkbox" name="sweetener" value="sweetener" checked>
+            <div class="form__checkbox-block"></div>
+            <label class="form__label form__label--checkbox" for="sweetener">
               Сахарозаменитель
             </label>
           </li>
-          <li class="form__item">
-            <input class="form__input form__input--checkbox visually-hidden" id="water" type="checkbox" name="water" value="water">
-            <div class="form__checkbox"></div>
-            <label class="form__label" for="water">
+          <li class="form__item form__item--checkbox">
+            <input class="form__checkbox visually-hidden" id="water" type="checkbox" name="water" value="water">
+            <div class="form__checkbox-block"></div>
+            <label class="form__label form__label--checkbox" for="water">
               Питьевая вода
             </label>
           </li>
-          <li class="form__item">
-            <input class="form__input form__input--checkbox visually-hidden" id="milk" type="checkbox" name="milk" value="milk">
-            <div class="form__checkbox"></div>
-            <label class="form__label" for="milk">
+          <li class="form__item form__item--checkbox">
+            <input class="form__checkbox visually-hidden" id="milk" type="checkbox" name="milk" value="milk">
+            <div class="form__checkbox-block"></div>
+            <label class="form__label form__label--checkbox" for="milk">
               Молоко
             </label>
           </li>
-          <li class="form__item">
-            <input class="form__input form__input--checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins" value="vitamins">
-            <div class="form__checkbox"></div>
-            <label class="form__label" for="vitamins">
+          <li class="form__item form__item--checkbox">
+            <input class="form__checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins" value="vitamins">
+            <div class="form__checkbox-block"></div>
+            <label class="form__label form__label--checkbox" for="vitamins">
               Витамины
             </label>
           </li>
         </ul>
       </div>
       <div class="form__submit-info-block">
-        <button class="form__submit-button" type="submit" name="submit">Отправить заявку</button>
-        <p class="form__required">* - Обязательные поля</p>
+        <button class="form__submit-button button" type="submit" name="submit">Отправить заявку</button>
+        <p class="form__required">* — Обязательные поля</p>
       </div>
     </form>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--form">
     <div class="page-footer__container">
-      <div class="page-footer__cooperation-block cooperation-block">
-        <p class="cooperation-block__text">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="cooperation-block__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="page-footer__cooperation-block cooperation-block cooperation-block--form">
+        <p class="cooperation-block__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <div class="cooperation-block__address">
+          <p class="cooperation-block__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="cooperation-block__city">Санкт-Петербург</p>
+        </div>
       </div>
       <div class="page-footer__map-block map-block">
-        <iframe class="map-block__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6502990019003!2d30.323187000836793!3d59.93875947667364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbg!4v1605353409099!5m2!1sru!2sbg" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="map-block__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6502990019003!2d30.323187000836793!3d59.93875947667364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbg!4v1605353409099!5m2!1sru!2sbg" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <div class="page-footer__bottom-block">
-        <a class="page-footer__company-logo company-logo" href="#">
-          <img class="company-logo__logo" src="" width="128" height="24" alt="Логотип нашей компании">
+        <a class="page-footer__company" href="#">
+          <img class="page-footer__logo" src="" width="128" height="24" alt="Логотип нашей компании">
         </a>
         <ul class="page-footer__list list">
           <li class="page-footer__social-item">
