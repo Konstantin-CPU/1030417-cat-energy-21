@@ -1,7 +1,32 @@
 .more-products {
-  padding-top: 80px;
   border-top: 1px solid @additional-grey-2;
   text-align: center;
+  padding: 0;
+  padding-top: 62px;
+  padding-bottom: 25px;
+  .padding-mobile();
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 145px;
+    width: 30px;
+    height: 2px;
+    background-color: @additional-grey-9;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 145px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(90deg);
+    background-color: @additional-grey-9;
+  }
 }
 
 .more-products__subtitle {
@@ -16,6 +41,8 @@
   font-size: 12px;
   line-height: 16px;
   color: @additional-dark-grey;
+  margin-top: -8px;
+  margin-bottom: 20px;
 }
 
 .more-products__button {
@@ -26,8 +53,71 @@
   background-color: @basic-grey;
   text-transform: uppercase;
   width: 100%;
-  min-height: 60px;
   border: none;
-  margin-bottom: 25px;
   text-decoration: none;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:hover {
+    background-color: @additional-grey-2;
+  }
+
+  &:active {
+    color: @additional-dark-grey-transparent;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .more-products {
+    border: 2px solid @basic-grey;
+    background-color: @basic-white;
+    padding: 38px;
+    padding-top: 161px;
+    align-items: center;
+
+    &::before {
+      width: 60px;
+      top: 80px;
+      left: 131px;
+    }
+
+    &::after {
+      width: 60px;
+      top: 80px;
+      left: 131px;
+    }
+  }
+
+  .more-products__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+    width: 134px;
+    margin: 0;
+    margin-bottom: 23px;
+    display: inline-block;
+  }
+
+  .more-products__text {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more-products {
+    &::before {
+      width: 60px;
+      top: 80px;
+      left: 90px;
+    }
+
+    &::after {
+      width: 60px;
+      top: 80px;
+      left: 90px;
+    }
+  }
 }
