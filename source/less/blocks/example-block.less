@@ -1,8 +1,6 @@
 .example-block {
   background-color: @additional-grey;
-  .padding-mobile();
-  padding-top: 27px;
-  padding-bottom: 35px;
+  padding: 27px @padding-mobile 35px;
 }
 
 .example-block__heading {
@@ -69,7 +67,7 @@
   }
 
   .example-block__container {
-    .padding-tablet();
+    padding: 0 @padding-tablet;
   }
 
   .example-block__heading {
@@ -178,8 +176,7 @@
   }
 
   .example-block__text {
-    margin: 0;
-    margin-bottom: 69px;
+    margin: 0 0 69px;
     width: 436px;
   }
 

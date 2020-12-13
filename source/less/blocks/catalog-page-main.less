@@ -2,14 +2,24 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
-  margin-top: 27px;
-  margin-bottom: 30px;
+  padding: 27px @padding-mobile 41px;
 }
 
 @media (min-width: @tablet-width) {
   .catalog-page-main__heading {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 139px;
+    padding: 51px @padding-tablet 0;
+    margin-bottom: 164px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-page-main {
+    padding-top: 188px;
+  }
+
+  .catalog-page-main__heading {
+    padding: 0 @padding-desktop;
   }
 }

@@ -1,6 +1,5 @@
 .form-page-main__wrapper {
-  .padding-mobile();
-  padding-top: 27px;
+  padding: 27px @padding-mobile 0;
 }
 
 .form-page-main__heading {
@@ -19,8 +18,7 @@
 
 @media (min-width: @tablet-width) {
   .form-page-main__wrapper {
-    padding-top: 51px;
-    .padding-tablet-form();
+    padding: 51px @padding-tablet-form 0;
   }
 
   .form-page-main__heading {
@@ -38,7 +36,6 @@
 
 @media (min-width: @desktop-width) {
   .form-page-main__wrapper {
-    padding-top: 187px;
-    .padding-desktop-form();
+    padding: 187px @padding-desktop;
   }
 }

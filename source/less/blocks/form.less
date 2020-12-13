@@ -15,7 +15,7 @@
 }
 
 .form__block {
-  .padding-mobile();
+  padding: 0 @padding-mobile;
 }
 
 .form__block--cat-info {
@@ -145,7 +145,7 @@
 }
 
 .form__list--user-info {
-  .padding-mobile();
+  padding: 0 @padding-mobile;
 }
 
 .form__block--comment {
@@ -158,7 +158,7 @@
 }
 
 .form__comment-block {
-  .padding-mobile();
+  padding: 0 @padding-mobile;
 }
 
 .form__comment {
@@ -180,7 +180,7 @@
 }
 
 .form__list--extra {
-  .padding-mobile();
+  padding: 0 @padding-mobile;
 }
 
 .form__item--checkbox {
@@ -207,9 +207,8 @@
 }
 
 .form__submit-info-block {
-  .padding-mobile();
+  padding: 0 @padding-mobile 18px;
   text-align: center;
-  padding-bottom: 18px;
 }
 
 .form__submit-button {
@@ -261,7 +260,7 @@
   }
 
   .form__basic-info-block {
-    .padding-tablet-form();
+    padding: 0 @padding-tablet-form;
     margin-bottom: 50px;
   }
 
@@ -339,7 +338,7 @@
   }
 
   .form__list--user-info {
-    .padding-tablet-form();
+    padding: 0 @padding-tablet-form;
   }
 
   .form__heading--comment {
@@ -347,7 +346,7 @@
   }
 
   .form__comment-block {
-    .padding-tablet-form();
+    padding: 0 @padding-tablet-form;
     margin-bottom: 62px;
   }
 
@@ -366,7 +365,7 @@
   }
 
   .form__list--extra {
-    .padding-tablet-form();
+    padding: 0 @padding-tablet-form;
     display: flex;
     flex-wrap: wrap;
   }
@@ -396,16 +395,14 @@
   }
 
   .form__submit-info-block {
-    padding: 0;
-    .padding-tablet-form();
+    padding: 0 @padding-tablet-form;
     display: flex;
     margin-bottom: 72px;
   }
 
   .form__submit-button {
     width: 282px;
-    margin: 0;
-    margin-right: 63px;
+    margin: 0 63px 0 0;
     font-size: 20px;
     line-height: 0px;
     padding: 26px 0;
@@ -422,7 +419,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
-    .padding-desktop-form();
+    padding: 0 @padding-desktop;
     margin-bottom: 69px;
   }
 
@@ -431,8 +428,7 @@
   }
 
   .form__block--program {
-    margin: 0;
-    margin-top: 46px;
+    margin: 46px 0 0;
   }
 
   .form__heading-block::before {
@@ -450,7 +446,7 @@
   }
 
   .form__list--user-info {
-    .padding-desktop-form();
+    padding: 0 @padding-desktop;
     display: flex;
     justify-content: flex-start;
 
@@ -470,7 +466,7 @@
   }
 
   .form__comment-block {
-    .padding-desktop-form();
+    padding: 0 @padding-desktop;
   }
 
   .form__block--extra {
@@ -480,12 +476,11 @@
   .form__list--extra {
     display: flex;
     flex-wrap: nowrap;
-    .padding-desktop-form();
+    padding: 0 @padding-desktop;
   }
 
   .form__item--checkbox {
-    margin: 0;
-    margin-right: 105px;
+    margin: 0 105px 0 0;
   }
 
   .form__item--checkbox:nth-child(2n - 1) {
@@ -493,7 +488,7 @@
   }
 
   .form__submit-info-block {
-    .padding-desktop-form();
+    padding: 0 @padding-desktop;
     margin-bottom: 82px;
   }
 
