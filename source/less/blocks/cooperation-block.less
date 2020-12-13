@@ -1,8 +1,7 @@
 .cooperation-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 14px;
-  .padding-mobile();
+  padding: 14px @padding-mobile 0;
   min-height: 114px;
 }
 
@@ -32,8 +31,7 @@
 
 @media (min-width: @tablet-width) {
   .cooperation-block {
-    .padding-tablet(70px; 70px);
-    padding-top: 48px;
+    padding: 48px 70px 0;
     min-height: 201px;
   }
 

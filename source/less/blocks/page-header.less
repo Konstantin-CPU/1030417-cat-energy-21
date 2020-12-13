@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .padding-mobile();
+  padding: 0 @padding-mobile;
 }
 
 .page-header__wrapper,
@@ -74,8 +74,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 76px;
-    .padding-tablet();
-    padding-top: 24px;
+    padding: 24px @padding-tablet 0;
   }
 
   .page-header__wrapper {
@@ -139,8 +138,7 @@
 
   .page-header__container {
     display: flex;
-    .padding-desktop();
-    padding-top: 50px;
+    padding: 50px @padding-desktop 0;
     background-color: inherit;
   }
 

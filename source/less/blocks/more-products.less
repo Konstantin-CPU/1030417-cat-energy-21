@@ -1,32 +1,8 @@
 .more-products {
   border-top: 1px solid @additional-grey-2;
   text-align: center;
-  padding: 0;
-  padding-top: 62px;
-  padding-bottom: 25px;
-  .padding-mobile();
+  padding: 62px @padding-mobile 25px;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 38px;
-    left: 145px;
-    width: 30px;
-    height: 2px;
-    background-color: @additional-grey-9;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 38px;
-    left: 145px;
-    width: 30px;
-    height: 2px;
-    transform: rotate(90deg);
-    background-color: @additional-grey-9;
-  }
 }
 
 .more-products__subtitle {
@@ -75,26 +51,13 @@
     padding: 38px;
     padding-top: 161px;
     align-items: center;
-
-    &::before {
-      width: 60px;
-      top: 80px;
-      left: 131px;
-    }
-
-    &::after {
-      width: 60px;
-      top: 80px;
-      left: 131px;
-    }
   }
 
   .more-products__subtitle {
     font-size: 20px;
     line-height: 22px;
     width: 134px;
-    margin: 0;
-    margin-bottom: 23px;
+    margin: 0 0 23px;
     display: inline-block;
   }
 
@@ -103,21 +66,5 @@
     line-height: 18px;
     width: 167px;
     margin: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .more-products {
-    &::before {
-      width: 60px;
-      top: 80px;
-      left: 90px;
-    }
-
-    &::after {
-      width: 60px;
-      top: 80px;
-      left: 90px;
-    }
   }
 }
