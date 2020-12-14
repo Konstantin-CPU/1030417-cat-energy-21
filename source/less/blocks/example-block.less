@@ -32,6 +32,51 @@
   padding-top: 265px;
   padding-left: 35px;
   padding-right: 30px;
+  position: relative;
+}
+
+.example-block__slider--before {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 311px;
+    height: 232px;
+    background-image: url("../../img/before-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.example-block__slider--after {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 18px;
+    width: 251px;
+    height: 240px;
+    background-image: url("../../img/after-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .example-block__slider--before {
+    &::before {
+      background-image: url("../../img/before-mobile@2x.png");
+      background-size: 311px auto;
+    }
+  }
+
+  .example-block__slider--after {
+    &::before {
+      background-image: url("../../img/after-mobile@2x.png");
+      background-size: 251px auto;
+    }
+  }
 }
 
 .example-block__before,
@@ -88,6 +133,40 @@
     background-color: @additional-grey;
     padding: 362px 100px 70px 100px;
     justify-content: center;
+
+    &::before {
+      top: -190px;
+      left: 30px;
+      width: 354px;
+      height: 620px;
+      background-image: url("../../img/before-tablet.png");
+      background-size: 354px auto;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -185px;
+      right: 30px;
+      width: 354px;
+      height: 607px;
+      background-image: url("../../img/after-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 354px auto;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .example-block__slider {
+      &::before {
+        background-image: url("../../img/before-tablet@2x.png");
+      }
+
+      &::after {
+        background-image: url("../../img/after-tablet@2x.png");
+      }
+    }
   }
 
   .example-block__before,
@@ -191,5 +270,36 @@
     top: 358px;
     left: -285px;
     background-color: transparent;
+
+    &::before {
+      top: -550px;
+      left: -80px;
+      width: 405px;
+      height: 536px;
+      background-image: url("../../img/before-desktop.png");
+      background-size: 405px auto;
+    }
+
+    &::after {
+      top: -550px;
+      right: -40px;
+      width: 325px;
+      height: 654px;
+      background-image: url("../../img/after-desktop.png");
+      background-size: 325px auto;
+      z-index: 1;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .example-block__slider {
+      &::before {
+        background-image: url("../../img/before-desktop@2x.png");
+      }
+
+      &::after {
+        background-image: url("../../img/after-desktop@2x.png");
+      }
+    }
   }
 }
