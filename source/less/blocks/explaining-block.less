@@ -41,25 +41,25 @@
 
 .explaining-block__item--healthy {
   &::before {
-    background-image: url("../../img/icons/icon-leaf.svg");
+    background-image: url("../img/icons/icon-leaf.svg");
   }
 }
 
 .explaining-block__item--easy {
   &::before {
-    background-image: url("../../img/icons/icon-tub.svg");
+    background-image: url("../img/icons/icon-tub.svg");
   }
 }
 
 .explaining-block__item--functional {
   &::before {
-    background-image: url("../../img/icons/icon-eat.svg");
+    background-image: url("../img/icons/icon-eat.svg");
   }
 }
 
 .explaining-block__item--fast {
   &::before {
-    background-image: url("../../img/icons/icon-alarm.svg");
+    background-image: url("../img/icons/icon-alarm.svg");
   }
 }
 
@@ -78,6 +78,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 0;
+    counter-reset: element;
   }
 
   .explaining-block__item {
@@ -97,6 +98,8 @@
     }
 
     &::after {
+      counter-increment: element;
+      content: "" counter(element);
       position: absolute;
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
@@ -112,7 +115,6 @@
 
   .explaining-block__item--healthy {
     &::after {
-      content: "1";
       top: -10px;
       right: 15px;
     }
@@ -120,7 +122,6 @@
 
   .explaining-block__item--easy {
     &::after {
-      content: "2";
       top: -10px;
       right: 0;
     }
@@ -128,7 +129,6 @@
 
   .explaining-block__item--functional {
     &::after {
-      content: "3";
       top: -10px;
       right: 0;
     }
@@ -136,7 +136,6 @@
 
   .explaining-block__item--fast {
     &::after {
-      content: "4";
       top: -10px;
       right: -5px;
     }
