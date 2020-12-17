@@ -3,6 +3,7 @@
   text-align: left;
   padding: 0 @padding-mobile;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .program-list__item:last-child {
@@ -17,6 +18,31 @@
   padding-left: 71px;
   padding-top: 30px;
   margin-bottom: 29px;
+  position: relative;
+}
+
+.program-list__item--slim {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    width: 50px;
+    height: 53px;
+    background: url("../img/icons/cat-black.svg") no-repeat;
+  }
+}
+
+.program-list__item--weight-gain {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 14px;
+    width: 67px;
+    height: 50px;
+    background: url("../img/icons/tiger-black.svg") no-repeat;
+  }
 }
 
 .program-list__text {
@@ -39,6 +65,17 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 1px solid @additional-grey-5;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 110px;
+    width: 32px;
+    height: 10px;
+    background: url("../img/icons/arrow-icon.svg") no-repeat;
+  }
 
   &:active {
     color: @black-transparent;
@@ -65,6 +102,26 @@
     margin-bottom: 25px;
   }
 
+  .program-list__item--slim {
+    &::before {
+      top: 80px;
+      left: 450px;
+      width: 200px;
+      height: 211px;
+      background-size: cover;
+    }
+  }
+
+  .program-list__item--weight-gain {
+    &::before {
+      top: 90px;
+      left: 410px;
+      width: 268px;
+      height: 200px;
+      background-size: cover;
+    }
+  }
+
   .program-list__text {
     font-size: 16px;
     line-height: 24px;
@@ -82,6 +139,12 @@
     line-height: 30px;
     border: none;
     padding: 0;
+    display: inline-block;
+
+    &::after {
+      top: 9px;
+      right: -60px;
+    }
   }
 }
 
@@ -103,6 +166,24 @@
   .program-list__heading {
     padding-left: 162px;
     margin-bottom: 74px;
+  }
+
+  .program-list__item--slim {
+    &::before {
+      top: 42px;
+      left: 53px;
+      width: 100px;
+      height: 106px;
+    }
+  }
+
+  .program-list__item--weight-gain {
+    &::before {
+      top: 47px;
+      left: 35px;
+      width: 134px;
+      height: 100px;
+    }
   }
 
   .program-list__text {

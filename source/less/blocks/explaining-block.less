@@ -20,10 +20,47 @@
   color: @additional-dark-grey;
   margin-bottom: 26px;
   padding-left: 80px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @basic-green;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
 }
 
 .explaining-block__item:last-child {
   margin-bottom: 0;
+}
+
+.explaining-block__item--healthy {
+  &::before {
+    background-image: url("../img/icons/icon-leaf.svg");
+  }
+}
+
+.explaining-block__item--easy {
+  &::before {
+    background-image: url("../img/icons/icon-tub.svg");
+  }
+}
+
+.explaining-block__item--functional {
+  &::before {
+    background-image: url("../img/icons/icon-eat.svg");
+  }
+}
+
+.explaining-block__item--fast {
+  &::before {
+    background-image: url("../img/icons/icon-alarm.svg");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -41,6 +78,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 0;
+    counter-reset: element;
   }
 
   .explaining-block__item {
@@ -52,10 +90,55 @@
     padding-top: 143px;
     margin-bottom: 37px;
     width: 245px;
+
+    &::before {
+      top: 30px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      counter-increment: element;
+      content: "" counter(element);
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: @basic-grey;
+      z-index: -1;
+    }
   }
 
   .explaining-block__item:nth-child(2n) {
     margin-left: 30px;
+  }
+
+  .explaining-block__item--healthy {
+    &::after {
+      top: -10px;
+      right: 15px;
+    }
+  }
+
+  .explaining-block__item--easy {
+    &::after {
+      top: -10px;
+      right: 0;
+    }
+  }
+
+  .explaining-block__item--functional {
+    &::after {
+      top: -10px;
+      right: 0;
+    }
+  }
+
+  .explaining-block__item--fast {
+    &::after {
+      top: -10px;
+      right: -5px;
+    }
   }
 }
 
@@ -78,6 +161,15 @@
     padding: 0;
     min-height: 0;
     margin-right: 80px;
+
+    &::before {
+      top: -110px;
+      left: 0;
+    }
+
+    &::after {
+      top: -150px;
+    }
   }
 
   .explaining-block__item:last-child {
