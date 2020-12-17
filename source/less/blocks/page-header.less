@@ -6,6 +6,16 @@
   padding: 0 @padding-mobile;
 }
 
+.page-header__logo-image {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__wrapper,
 .page-header__item {
   border-bottom: 1px solid @additional-grey-4;
@@ -80,10 +90,6 @@
       width: 174px;
       height: 52px;
       margin-bottom: 5px;
-    }
-
-    .page-header__logo-text {
-      display: none;
     }
   }
 

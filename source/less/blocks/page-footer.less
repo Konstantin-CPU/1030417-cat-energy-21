@@ -18,6 +18,14 @@
 
 .page-footer__logo {
   margin-top: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__list {
@@ -35,21 +43,37 @@
   display: block;
   width: 23px;
   height: 22px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__link--vkontakte {
   background: url("../img/icons/icon-vkontakte.svg") 50% no-repeat;
   background-size: 23px 16px;
+
+  &:hover {
+    background-image: url("../img/icons/icon-vkontakte-hover.svg");
+  }
 }
 
 .page-footer__link--instagram {
   background: url("../img/icons/icon-instagram.svg") 50% no-repeat;
   background-size: 16px;
+
+  &:hover {
+    background-image: url("../img/icons/icon-instagram-hover.svg");
+  }
 }
 
 .page-footer__link--facebook {
   background: url("../img/icons/icon-facebook.svg") 50% no-repeat;
   background-size: 22px;
+
+  &:hover {
+    background-image: url("../img/icons/icon-facebook-hover.svg");
+  }
 }
 
 .page-footer__copyright {
@@ -66,6 +90,19 @@
     background-image: url("../img/icons/htmlacademy.svg");
     background-repeat: no-repeat;
   }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/icons/htmlacademy-hover.svg");
+    }
+  }
+
+  &:active {
+    .page-footer__copyright-text,
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-footer__copyright-text {
@@ -74,6 +111,10 @@
   line-height: 18px;
   color: @additional-dark-grey;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
