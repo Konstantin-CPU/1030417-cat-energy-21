@@ -173,21 +173,21 @@
   }
 }
 
-.form__input:active + .form__input-icon--phone .form__icon-path {
+.form__input:focus + .form__input-icon--phone {
   fill: @basic-green;
 }
 
-.form__input:active + .form__input-icon--email .form__icon-line,
-.form__input:active + .form__input-icon--email .form__icon-path {
+.form__input:focus + .form__input-icon--email line,
+.form__input:focus + .form__input-icon--email path {
   stroke: @basic-green;
 }
 
-.form__input--error + .form__input-icon--phone .form__icon-path {
+.form__input--error + .form__input-icon--phone path {
   fill: @basic-red;
 }
 
-.form__input--error + .form__input-icon--email .form__icon-line,
-.form__input--error + .form__input-icon--email .form__icon-path {
+.form__input--error + .form__input-icon--email line,
+.form__input--error + .form__input-icon--email path {
   stroke: @basic-red;
 }
 
@@ -280,8 +280,6 @@
   width: 100%;
   height: 40px;
   margin-bottom: 7px;
-  color: @basic-white;
-  background-color: @basic-green;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
