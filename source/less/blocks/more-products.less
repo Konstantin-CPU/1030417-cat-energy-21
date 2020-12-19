@@ -3,6 +3,16 @@
   text-align: center;
   padding: 62px @padding-mobile 25px;
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 145px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/icons/icon-plus.svg") 50% no-repeat;
+  }
 }
 
 .more-products__subtitle {
@@ -51,6 +61,14 @@
     padding: 38px;
     padding-top: 161px;
     align-items: center;
+
+    &::before {
+      top: 50px;
+      left: 130px;
+      width: 60px;
+      height: 60px;
+      background-size: 60px;
+    }
   }
 
   .more-products__subtitle {
@@ -66,5 +84,13 @@
     line-height: 18px;
     width: 167px;
     margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more-products {
+    &::before {
+      left: 90px;
+    }
   }
 }

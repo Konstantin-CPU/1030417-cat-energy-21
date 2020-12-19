@@ -96,6 +96,10 @@
     padding: 26px 38px 28px;
   }
 
+  .extra-products__item:not(:last-child) {
+    border-bottom: none;
+  }
+
   .extra-products__item-description-block {
     display: flex;
     justify-content: space-between;
@@ -140,13 +144,17 @@
     margin: 0 80px 0 0;
     width: 895px;
     border-top: 1px solid @additional-grey-3;
+    border-bottom: 1px solid @additional-grey-3;
   }
 
   .extra-products__item {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
     border: none;
+  }
+
+  .extra-products__item:not(:last-child) {
     border-bottom: 1px solid @additional-grey-3;
   }
 

@@ -49,13 +49,13 @@
   }
 
   &:focus {
-    border-color: @additional-dark-grey;
-    border-width: 2px;
+    outline: 2px solid @additional-dark-grey;
+    outline-offset: -2px;
   }
 
   &--error {
-    border-color: @basic-red;
-    border-width: 2px;
+    outline: 2px solid @basic-red;
+    outline-offset: -2px;
   }
 }
 
@@ -173,21 +173,21 @@
   }
 }
 
-.form__input:focus + .form__input-icon--phone {
+.form__input:focus + .form__input-icon--phone .form__icon-path {
   fill: @basic-green;
 }
 
-.form__input:focus + .form__input-icon--email line,
-.form__input:focus + .form__input-icon--email path {
+.form__input:focus + .form__input-icon--email .form__icon-line,
+.form__input:focus + .form__input-icon--email .form__icon-path {
   stroke: @basic-green;
 }
 
-.form__input--error + .form__input-icon--phone path {
+.form__input--error + .form__input-icon--phone .form__icon-path {
   fill: @basic-red;
 }
 
-.form__input--error + .form__input-icon--email line,
-.form__input--error + .form__input-icon--email path {
+.form__input--error + .form__input-icon--email .form__icon-line,
+.form__input--error + .form__input-icon--email .form__icon-path {
   stroke: @basic-red;
 }
 
