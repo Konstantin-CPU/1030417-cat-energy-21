@@ -29,6 +29,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
+  padding: 0;
 }
 
 .form__label--text-input {
@@ -148,6 +149,48 @@
   padding: 0 @padding-mobile;
 }
 
+.form__input-block {
+  flex-grow: 1;
+  position: relative;
+
+  .form__input {
+    width: 100%;
+    border-color: @additional-grey-3;
+
+    &:active {
+      border-color: @additional-dark-grey;
+    }
+
+    &--error {
+      border-color: @basic-red;
+    }
+  }
+
+  .form__input-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.form__input:focus + .form__input-icon--phone {
+  fill: @basic-green;
+}
+
+.form__input:focus + .form__input-icon--email line,
+.form__input:focus + .form__input-icon--email path {
+  stroke: @basic-green;
+}
+
+.form__input--error + .form__input-icon--phone path {
+  fill: @basic-red;
+}
+
+.form__input--error + .form__input-icon--email line,
+.form__input--error + .form__input-icon--email path {
+  stroke: @basic-red;
+}
+
 .form__block--comment {
   padding: 0;
   margin-bottom: 21px;
@@ -187,6 +230,14 @@
   display: flex;
   align-items: center;
   margin-bottom: 25px;
+
+  &:hover .form__checkbox + .form__checkbox-block {
+    border-color: @additional-grey-8;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
 }
 
 .form__item--checkbox:last-child {
@@ -198,6 +249,18 @@
   width: 30px;
   height: 30px;
   border: 1px solid @additional-grey-3;
+}
+
+.form__checkbox:checked + .form__checkbox-block {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background: url("../img/icons/tick-checkbox.svg") no-repeat 50%;
+  }
 }
 
 .form__label--checkbox {
@@ -217,12 +280,11 @@
   width: 100%;
   height: 40px;
   margin-bottom: 7px;
-  color: @basic-white;
-  background-color: @basic-green;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  .green-button();
 }
 
 .form__input,
@@ -372,6 +434,16 @@
 
   .form__item--checkbox {
     margin-bottom: 40px;
+  }
+
+  .form__checkbox:checked + .form__checkbox-block {
+    &::after {
+      top: 7px;
+      left: 7px;
+      width: 26px;
+      height: 26px;
+      background-size: 26px auto;
+    }
   }
 
   .form__item--checkbox:nth-child(2n - 1) {
