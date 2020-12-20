@@ -42,11 +42,11 @@
 .page-footer__link {
   display: block;
 
-  &:hover path[fill] {
+  &:hover .page-footer__path--fill {
     fill: @basic-green;
   }
 
-  &:hover path[stroke] {
+  &:hover .page-footer__path--stroke {
     stroke: @basic-green;
   }
 
@@ -67,7 +67,7 @@
   align-items: center;
   text-decoration: none;
 
-  &:hover path {
+  &:hover .page-footer__path {
     fill: @basic-green;
   }
 
@@ -105,17 +105,17 @@
   }
 
   .page-footer__link {
-    &--vkontakte svg {
+    &--vkontakte .page-footer__icon {
       width: 30px;
       height: 22px;
     }
 
-    &--instagram svg {
+    &--instagram .page-footer__icon {
       width: 23px;
       height: 23px;
     }
 
-    &--facebook svg {
+    &--facebook .page-footer__icon {
       width: 28px;
       height: 33px;
     }
