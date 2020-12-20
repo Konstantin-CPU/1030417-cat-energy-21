@@ -42,12 +42,22 @@
 .page-footer__link {
   display: block;
 
-  &:hover .page-footer__path--fill {
-    fill: @basic-green;
+  .page-footer__icon--need-stroke {
+    stroke: @additional-grey-10;
+    fill: none;
   }
 
-  &:hover .page-footer__path--stroke {
+  &:hover .page-footer__icon--need-stroke {
     stroke: @basic-green;
+  }
+
+  .page-footer__icon--need-fill {
+    fill: @additional-grey-10;
+    stroke: none;
+  }
+
+  &:hover .page-footer__icon--need-fill {
+    fill: @basic-green;
   }
 
   &:active {
@@ -67,7 +77,11 @@
   align-items: center;
   text-decoration: none;
 
-  &:hover .page-footer__path {
+  .page-footer__copyright-icon {
+    fill: @additional-grey-10;
+  }
+
+  &:hover .page-footer__copyright-icon {
     fill: @basic-green;
   }
 
