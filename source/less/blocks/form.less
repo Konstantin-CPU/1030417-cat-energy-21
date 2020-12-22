@@ -52,11 +52,11 @@
     outline: 2px solid @additional-dark-grey;
     outline-offset: -2px;
   }
+}
 
-  &--error {
-    outline: 2px solid @basic-red;
-    outline-offset: -2px;
-  }
+.form__input--text-input.form__input--error {
+  outline: 2px solid @basic-red;
+  outline-offset: -2px;
 }
 
 .form__item--text-input:last-child {
@@ -156,14 +156,6 @@
   .form__input {
     width: 100%;
     border-color: @additional-grey-3;
-
-    &:active {
-      border-color: @additional-dark-grey;
-    }
-
-    &--error {
-      border-color: @basic-red;
-    }
   }
 
   .form__input-icon {
@@ -173,22 +165,30 @@
   }
 }
 
-.form__input:focus + .form__input-icon--phone .form__icon-path {
-  fill: @basic-green;
+.form__input-icon--need-stroke {
+  fill: none;
+  stroke: @additional-darker-grey;
 }
 
-.form__input:focus + .form__input-icon--email .form__icon-line,
-.form__input:focus + .form__input-icon--email .form__icon-path {
+.form__input-icon--need-fill {
+  stroke: none;
+  fill: @additional-darker-grey;
+}
+
+.form__input:focus + .form__input-icon--need-stroke {
   stroke: @basic-green;
 }
 
-.form__input--error + .form__input-icon--phone .form__icon-path {
-  fill: @basic-red;
+.form__input:focus + .form__input-icon--need-fill {
+  fill: @basic-green;
 }
 
-.form__input--error + .form__input-icon--email .form__icon-line,
-.form__input--error + .form__input-icon--email .form__icon-path {
+.form__input--error + .form__input-icon--need-stroke {
   stroke: @basic-red;
+}
+
+.form__input--error + .form__input-icon--need-fill {
+  fill: @basic-red;
 }
 
 .form__block--comment {
