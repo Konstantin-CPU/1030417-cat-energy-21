@@ -45,9 +45,5 @@
   ],
   "engines": {
     "node": "14.15.0"
-  },
-  "dependencies": {
-    "imagemin-mozjpeg": "^9.0.0",
-    "mozjpeg": "^7.0.0"
   }
 }
