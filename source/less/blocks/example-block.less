@@ -16,7 +16,6 @@
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 25px;
-  width: 279px;
 }
 
 .example-block__expenses {
@@ -32,7 +31,8 @@
 .example-block__image-before {
   position: absolute;
   top: 0;
-  left: -20px;
+  left: 50%;
+  margin-left: -159px;
   width: 311px;
   height: 232px;
   background: url("../img/index/before-mobile.png") no-repeat 50%;
@@ -42,7 +42,8 @@
   display: none;
   position: absolute;
   top: 0;
-  right: 13px;
+  left: 50%;
+  margin-left: -122px;
   width: 251px;
   height: 240px;
   background: url("../img/index/after-mobile.png") no-repeat 50%;
@@ -62,11 +63,10 @@
 
 .example-block__slider {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding-top: 265px;
-  padding-left: 35px;
-  padding-right: 30px;
+  padding: 265px 30px 0 35px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -85,6 +85,7 @@
   border: 1px solid @additional-grey-3;
   border-radius: 6px;
   padding: 3px 5px;
+  margin: 0 17px;
 }
 
 .example-block__bar {
@@ -128,8 +129,7 @@
   .example-block__image-before {
     width: 354px;
     height: 620px;
-    top: 0;
-    left: 30px;
+    margin-left: -355px;
     background-image: url("../img/index/before-tablet.png");
   }
 
@@ -138,7 +138,7 @@
     width: 354px;
     height: 607px;
     top: 7px;
-    right: 30px;
+    margin-left: -1px;
     background-image: url("../img/index/after-tablet.png");
   }
 
@@ -226,25 +226,26 @@
     border: 0;
     padding: 0;
     position: relative;
-    margin-top: 224px;
+    margin-top: 236px;
   }
 
   .example-block__main-container {
-    display: grid;
-    grid-template-columns: 1045px 395px;
+    display: flex;
+    justify-content: center;
     height: 462px;
   }
 
   .example-block__container {
     padding-left: 110px;
     padding-top: 70px;
+    width: 1045px;
   }
 
   .example-block__heading {
     position: absolute;
     top: -136px;
-    left: 110px;
-    margin: 0;
+    left: 50%;
+    margin: 0 0 0 -610px;
   }
 
   .example-block__text {
@@ -255,13 +256,14 @@
   .example-block__slider-container {
     background-color: @additional-grey;
     position: relative;
+    width: 395px;
   }
 
   .example-block__image-before {
     width: 405px;
     height: 536px;
     top: -5px;
-    left: -365px;
+    margin-left: -563px;
     background-image: url("../img/index/before-desktop.png");
   }
 
@@ -269,7 +271,7 @@
     width: 325px;
     height: 654px;
     top: 0;
-    right: 70px;
+    margin-left: -198px;
     background-image: url("../img/index/after-desktop.png");
   }
 
@@ -288,7 +290,7 @@
   .example-block__slider {
     padding: 0;
     position: absolute;
-    top: 358px;
+    top: 364px;
     left: -285px;
     background-color: transparent;
   }

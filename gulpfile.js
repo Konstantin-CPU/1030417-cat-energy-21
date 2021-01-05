@@ -4,7 +4,7 @@ const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const csso = require("postcss-csso");
+const csso = require("gulp-csso");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -22,9 +22,9 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    .pipe(postcss(
+    .pipe(postcss([
       autoprefixer()
-    ))
+    ]))
     .pipe(rename("style.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())

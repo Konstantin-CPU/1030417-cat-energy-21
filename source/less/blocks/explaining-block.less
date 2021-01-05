@@ -10,7 +10,7 @@
 }
 
 .explaining-block__list {
-  margin-bottom: 46px;
+  margin-bottom: 40px;
 }
 
 .explaining-block__item {
@@ -18,9 +18,10 @@
   font-size: 14px;
   line-height: 18px;
   color: @additional-dark-grey;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   padding-left: 80px;
   position: relative;
+  height: 60px;
 
   &::before {
     content: "";
@@ -145,6 +146,8 @@
 @media (min-width: @desktop-width) {
   .explaining-block {
     padding: 0 @padding-desktop;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .explaining-block__heading {
@@ -153,7 +156,7 @@
 
   .explaining-block__list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0;
   }
 

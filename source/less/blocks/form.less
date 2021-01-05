@@ -374,7 +374,6 @@
     content: "";
     height: 2px;
     width: 30px;
-    margin-right: 40px;
     background-color: @basic-green;
   }
 
@@ -387,7 +386,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
-    margin-right: 40px;
+    margin: 0 40px;
   }
 
   .form__block--user-info {
@@ -429,6 +428,7 @@
   .form__list--extra {
     padding: 0 @padding-tablet-form;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -492,7 +492,8 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     padding: 0 @padding-desktop;
-    margin-bottom: 69px;
+    max-width: 1440px;
+    margin: 0 auto 69px;
   }
 
   .form__block--cat-info {
@@ -503,8 +504,34 @@
     margin: 46px 0 0;
   }
 
-  .form__heading-block::before {
-    width: 70px;
+  .form__heading-block {
+    position: relative;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .form__heading-block-wrapper {
+    padding-left: 70px;
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .form__heading--green-line {
+    padding: 0 40px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: @basic-white;
+    z-index: 1;
+    display: inline-block;
   }
 
   .form__heading-block::after,
@@ -521,6 +548,8 @@
     padding: 0 @padding-desktop;
     display: flex;
     justify-content: flex-start;
+    max-width: 1440px;
+    margin: 0 auto;
 
     .form__item--text-input {
       margin: 0;
@@ -539,6 +568,8 @@
 
   .form__comment-block {
     padding: 0 @padding-desktop;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .form__block--extra {
@@ -547,8 +578,11 @@
 
   .form__list--extra {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     padding: 0 @padding-desktop;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .form__item--checkbox {
@@ -559,9 +593,14 @@
     margin-right: 105px;
   }
 
+  .form__item--checkbox:last-child {
+    margin-right: 0;
+  }
+
   .form__submit-info-block {
     padding: 0 @padding-desktop;
-    margin-bottom: 82px;
+    max-width: 1440px;
+    margin: 0 auto 82px;
   }
 
   .form__submit-button {
