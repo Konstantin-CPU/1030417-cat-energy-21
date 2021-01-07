@@ -101,7 +101,7 @@
       font-weight: normal;
       font-size: 18px;
       line-height: 24px;
-      margin-right: 35px;
+      margin: -6px 36px 0 0;
       padding: 0;
     }
   }
@@ -118,6 +118,8 @@
     &:active,
     &--current {
       border-bottom: 2px solid @basic-green;
+      padding-top: 7px;
+      padding-bottom: 8px;
       opacity: 1;
     }
 
@@ -151,9 +153,20 @@
     }
   }
 
+  .page-header__list {
+    .page-header__item {
+      margin-right: 34px;
+    }
+  }
+
+  .page-header__item:last-child {
+    margin-right: 0;
+  }
+
   .page-header__link {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 10px;
     color: @basic-white;
 
     &:hover {
@@ -163,6 +176,7 @@
     &:active,
     &--current {
       border: none;
+      padding: 15px 0 5px;
       border-bottom: 2px solid @basic-white;
       opacity: 1;
     }
