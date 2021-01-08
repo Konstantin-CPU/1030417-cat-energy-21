@@ -19,7 +19,7 @@
               <img class="page-header__logo-image" src="img/icons/logo-mobile.svg" width="191" height="38" alt="Логотип магазина Кэт энерджи">
             </picture>
           </a>
-          <button class="page-header__toggle-button page-header__toggle-button--open">
+          <button class="page-header__toggle-button page-header__toggle-button--open visually-hidden">
             <span class="visually-hidden">Показать/скрыть меню навигации</span>
           </button>
         </div>
@@ -98,8 +98,8 @@
           </div>
           <div class="example-block__slider-container">
             <div class="example-block__slider-example">
-              <div class="example-block__image-before"></div>
-              <div class="example-block__image-after"></div>
+              <div class="example-block__image-before"><span class="visually-hidden">До</span></div>
+              <div class="example-block__image-after"><span class="visually-hidden">После</span></div>
             </div>
             <div class="example-block__slider">
               <span class="example-block__before">Было</span>
@@ -123,7 +123,7 @@
           </div>
         </div>
         <div class="page-footer__map-block map-block">
-          <iframe class="map-block__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6502990019003!2d30.323187000836793!3d59.93875947667364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sbg!4v1605353409099!5m2!1sru!2sbg" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="map-block__map" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         <div class="page-footer__bottom-block">
           <a class="page-footer__company" href="#">
@@ -131,21 +131,21 @@
           </a>
           <ul class="page-footer__list list">
             <li class="page-footer__social-item">
-              <a class="page-footer__link page-footer__link--vkontakte" href="#">
+              <a class="page-footer__link page-footer__link--vkontakte" href="#" aria-label="vkontakte">
                 <svg class="page-footer__icon page-footer__icon--need-fill" width="23" height="16">
                   <use xlink:href="img/icons/sprite.svg#icon-vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__link page-footer__link--instagram" href="#">
+              <a class="page-footer__link page-footer__link--instagram" href="#" aria-label="instagram">
                 <svg class="page-footer__icon page-footer__icon--need-fill" width="16" height="16">
                   <use xlink:href="img/icons/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__link page-footer__link--facebook" href="#">
+              <a class="page-footer__link page-footer__link--facebook" href="#" aria-label="facebook">
                 <svg class="page-footer__icon page-footer__icon--need-stroke" width="22" height="22">
                   <use xlink:href="img/icons/sprite.svg#icon-facebook"></use>
                 </svg>

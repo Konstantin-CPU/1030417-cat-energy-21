@@ -78,10 +78,17 @@
     background: url("../img/icons/arrow-icon.svg") no-repeat;
   }
 
+  &:hover {
+    &::after {
+      background-image: url("../img/icons/arrow-icon-hover.svg");
+    }
+  }
+
   &:active {
     color: @black-transparent;
 
     &::after {
+      background-image: url("../img/icons/arrow-icon-hover.svg");
       opacity: 0.3;
     }
   }
@@ -110,7 +117,8 @@
   .program-list__item--slim {
     &::before {
       top: 80px;
-      left: 445px;
+      left: auto;
+      right: 62px;
       width: 200px;
       height: 211px;
       background-size: cover;
@@ -120,7 +128,8 @@
   .program-list__item--weight-gain {
     &::before {
       top: 90px;
-      left: 410px;
+      right: 28px;
+      left: auto;
       width: 268px;
       height: 200px;
       background-size: cover;

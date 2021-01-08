@@ -2,10 +2,39 @@
   display: block;
   width: 100%;
   border: 0;
+  background-image: url("../img/map/location-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-resolution: 2dppx) {
+  .map-block__map {
+    background-image: url("../img/map/location-mobile@2x.png");
+  }
 }
 
 @media (min-width: @tablet-width) {
   .map-block__map {
     height: 400px;
+    background-image: url("../img/map/location-tablet.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map-block__map {
+      background-image: url("../img/map/location-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map-block__map {
+    background-image: url("../img/map/location-desktop.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map-block__map {
+      background-image: url("../img/map/location-desktop@2x.png");
+    }
   }
 }

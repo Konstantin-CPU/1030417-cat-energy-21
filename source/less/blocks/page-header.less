@@ -69,14 +69,19 @@
   .page-header__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     min-height: 76px;
     padding: 24px @padding-tablet 0;
+  }
+
+  .page-header__navigation {
+    display: flex;
+    align-items: center;
   }
 
   .page-header__wrapper {
     border-bottom: none;
     padding: 0;
+    margin-top: -3px;
   }
 
   .page-header__toggle-button {
@@ -95,13 +100,15 @@
 
   .page-header__list {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 440px;
 
     .page-header__item {
       border: none;
       font-weight: normal;
       font-size: 18px;
       line-height: 24px;
-      margin: -6px 36px 0 0;
+      margin: -4px 35px 0 0;
       padding: 0;
     }
   }
@@ -118,8 +125,9 @@
     &:active,
     &--current {
       border-bottom: 2px solid @basic-green;
+      padding-bottom: 7px;
       padding-top: 7px;
-      padding-bottom: 8px;
+      margin-bottom: -2px;
       opacity: 1;
     }
 
@@ -132,6 +140,7 @@
 @media (min-width: @desktop-width) {
   .page-header {
     position: absolute;
+    display: block;
     top: 0;
     left: 50%;
     margin-left: -720px;
@@ -154,6 +163,8 @@
   }
 
   .page-header__list {
+    max-width: 600px;
+
     .page-header__item {
       margin-right: 34px;
     }

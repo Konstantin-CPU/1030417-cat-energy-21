@@ -169,6 +169,12 @@
 
     &:hover {
       border-bottom: 1px solid @black-transparent;
+      cursor: pointer;
+    }
+
+    &:active {
+      border: none;
+      margin-top: -1px;
     }
   }
 
@@ -232,12 +238,23 @@
   .example-block__main-container {
     display: flex;
     justify-content: center;
-    height: 462px;
+    min-height: 462px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: 325px;
+      width: 100%;
+      height: 100%;
+      background-color: @additional-grey;
+    }
   }
 
   .example-block__container {
-    padding-left: 110px;
-    padding-top: 70px;
+    padding: 70px 30px 70px 110px;
     width: 1045px;
   }
 

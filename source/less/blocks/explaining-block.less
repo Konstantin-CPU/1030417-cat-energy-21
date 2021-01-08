@@ -21,7 +21,7 @@
   margin-bottom: 20px;
   padding-left: 80px;
   position: relative;
-  height: 60px;
+  min-height: 60px;
 
   &::before {
     content: "";
@@ -86,10 +86,10 @@
     display: block;
     font-size: 16px;
     line-height: 24px;
-    min-height: 280px;
+    height: auto;
     padding: 0;
     padding-top: 143px;
-    margin-bottom: 37px;
+    margin-bottom: 102px;
     width: 245px;
 
     &::before {
@@ -145,7 +145,7 @@
 
 @media (min-width: @desktop-width) {
   .explaining-block {
-    padding: 0 @padding-desktop;
+    padding: 0 @padding-desktop 26px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -162,8 +162,8 @@
 
   .explaining-block__item {
     padding: 0;
-    min-height: 0;
     margin-right: 80px;
+    margin-bottom: 0;
 
     &::before {
       top: -110px;
