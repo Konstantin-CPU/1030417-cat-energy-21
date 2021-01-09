@@ -78,7 +78,8 @@
     }
   }
 
-  &-disabled {
+  .form__radio[disabled] + .form__radio-block,
+  .form__radio[disabled] ~ .form__label {
     opacity: 0.3;
   }
 }
@@ -240,7 +241,8 @@
     border-color: @additional-grey-8;
   }
 
-  &-disabled {
+  .form__checkbox[disabled] + .form__checkbox-block,
+  .form__checkbox[disabled] ~ .form__label {
     opacity: 0.3;
   }
 }
